@@ -4,12 +4,22 @@
 // This is useful for granularity you might need beyond just the environment.
 // Note that as usual, any environment variables you expose through it will end up in your
 // bundle, and you should not use it for any sensitive information like passwords or keys.
-// import { env } from './.env';
+import { env } from './.env';
 
 export const environment = {
   production: true,
+  firebase: {
+    apiKey: 'AIzaSyAp17mVLJDhAUrbEegjYNmx08NpvdRJ0vU',
+    authDomain: 'ss-io-85706.firebaseapp.com',
+    databaseURL: 'https://ss-io-85706.firebaseio.com',
+    projectId: 'ss-io-85706',
+    storageBucket: 'ss-io-85706.appspot.com',
+    messagingSenderId: '391854914397',
+    appId: '1:391854914397:web:c67a1f78126f9e169b06b4',
+    measurementId: 'G-WJZW42RBD4'
+  },
   hmr: false,
-  // version: env.npm_package_version,
+  version: env.npm_package_version,
   serverUrl: 'https://api.chucknorris.io',
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US', 'fr-FR']

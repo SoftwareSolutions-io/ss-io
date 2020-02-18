@@ -37,7 +37,7 @@ export class AppComponent implements OnInit, OnDestroy {
     log.debug('init');
 
     this.angulartics2GoogleAnalytics.startTracking();
-    this.angulartics2GoogleAnalytics.eventTrack('1.0', { category: 'App initialized' });
+    this.angulartics2GoogleAnalytics.eventTrack(environment.version, { category: 'App initialized' });
 
     // Setup translations
     this.i18nService.init(environment.defaultLanguage, environment.supportedLanguages);
