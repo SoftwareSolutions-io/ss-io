@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ss-io-85706": {
+      "hosting": {
+        "ss-io": [
+          "ss-io-85706"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ss-io-85706"
+  }
+}
