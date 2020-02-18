@@ -14,7 +14,7 @@ const log = new Logger('Login');
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit, OnDestroy {
-  version: string | null = environment.version;
+  // version: string | null = environment.version;
   error: string | undefined;
   loginForm!: FormGroup;
   isLoading = false;
